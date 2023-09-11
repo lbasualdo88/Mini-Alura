@@ -1,0 +1,139 @@
+
+   
+
+.headerPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerPrincipal-nav {
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    /*Espacio al rededor del elemento*/
+    width: 70%;
+    margin-right: 5%;
+
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    flex-wrap: wrap;
+    /* indica al elemento que al llegar a la altura dada se quiebre y vaya al lado*/
+}
+
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+    display: flex;
+    width: 23%;
+}
+.videoSobre .container {
+    display: flex;
+}
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.videoSobre-video {
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+.videoSobre-sobre-list {
+    flex-grow: 2;
+}
+/*Responsivo*/
+@media (max-width: 768px) {
+
+
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-bottom: 2rem;
+	}
+	.contenidoPrincipal-cursos-link{
+		width: 90%;
+        padding: .1rem;
+	}
+    .nombre_tecno{
+        font-size: 12px;
+    }
+    .rodapePrincipal-navMap-list {
+        height: auto;
+
+        align-items: center;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+    .headerPrincipal-nav-link-app {
+        order: -1;
+    }
+    .videoSobre .container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+   .rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .contenidoPrincipal-cursos{
+    display: flex;
+    flex-direction: column;
+   }
+   .contenidoPrincipal-cursos-link{
+    width: 100%;
+}
+}
