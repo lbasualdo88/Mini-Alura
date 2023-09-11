@@ -67,7 +67,7 @@
     flex-grow: 2;
 }
 /*Responsivo*/
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 800px) {
 
 
     .headerPrincipal .container {
